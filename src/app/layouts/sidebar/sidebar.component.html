@@ -3,53 +3,38 @@
 
   <ul class="sidebar-nav" id="sidebar-nav">
 
-<!--    <li class="nav-item">-->
-<!--      <a class="nav-link " href="index.html">-->
-<!--        <i class="bi bi-grid"></i>-->
-<!--        <span>Dashboard</span>-->
-<!--      </a>-->
-<!--    </li>&lt;!&ndash; End Dashboard Nav &ndash;&gt;-->
-<!--    <li class="nav-heading">Parametros</li>-->
-
-<!--    <li class="nav-item">-->
-<!--      <a class="nav-link collapsed" [routerLink]="['/marca']">-->
-<!--        <i class="bi bi-grid"></i>-->
-<!--        <span>Marca</span>-->
-<!--      </a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--      <a class="nav-link collapsed" [routerLink]="['/modelo']">-->
-<!--        <i class="bi bi-person"></i>-->
-<!--        <span>Modelo</span>-->
-<!--      </a>-->
-<!--    </li>-->
-<!--    <li class="nav-item">-->
-<!--      <a class="nav-link collapsed" [routerLink]="['/tipoEquipamento']">-->
-<!--        <i class="bi bi-person"></i>-->
-<!--        <span>Tipo de Equipamento</span>-->
-<!--      </a>-->
-<!--    </li>-->
     <li class="nav-item">
-            <a  class="nav-link " [routerLink]="['/equipamento']">
+            <a routerLinkActive="active" class="nav-link collapsed" routerLink="/equipamento">
              <i class="bi bi-person"></i>
               <span>Equipamento</span>
             </a>
     </li>
-
     <li class="nav-item">
-            <a class="nav-link collapsed" [routerLink]="['/aquisicao']">
+            <a routerLinkActive="active" class="nav-link collapsed" routerLink="/aquisicao">
              <i class="bi bi-grid"></i>
               <span>Aquisição</span>
             </a>
     </li>
-          <li class="nav-heading">Pages</li>
-
-          <li class="nav-item">
-            <a class="nav-link collapsed" href="users-profile.html">
-              <i class="bi bi-person"></i>
-              <span>Profile</span>
+    <li class="nav-item">
+            <a routerLinkActive="active" class="nav-link collapsed" routerLink="/empresa">
+             <i class="bi bi-grid"></i>
+              <span>Empresa</span>
             </a>
-          </li>
+    </li>
+    <li class="nav-item">
+            <a routerLinkActive="active" class="nav-link collapsed" routerLink="/reparacao">
+             <i class="bi bi-grid"></i>
+              <span>Reparacao</span>
+            </a>
+    </li>
+    <li class="nav-heading">_________________________________</li>
+
+    <li class="nav-item">
+      <a routerLinkActive="active" class="nav-link collapsed" routerLink="/usuario">
+        <i class="bi bi-person"></i>
+        <span>Usuários</span>
+      </a>
+    </li>
           <!-- End Dashboard Nav -->
 
     <li class="nav-item">
@@ -58,21 +43,33 @@
       </a>
       <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
         <li class="nav-item">
-          <a class="nav-link collapsed" [routerLink]="['/marca']">
+          <a routerLinkActive="active" class="nav-link collapsed" routerLink="/marca">
             <i class="bi bi-circle"></i>
             <span>Marca</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link collapsed" [routerLink]="['/modelo']">
+          <a routerLinkActive="active" class="nav-link collapsed" routerLink="/modelo">
             <i class="bi bi-circle"></i>
             <span>Modelo</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link collapsed" [routerLink]="['/tipoEquipamento']">
+          <a routerLinkActive="active" class="nav-link collapsed" routerLink="/tipoEquipamento">
             <i class="bi bi-circle"></i>
             <span>Tipo de Equipamento</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link collapsed" routerLink="/unidade">
+            <i class="bi bi-circle"></i>
+            <span>Unidade</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a routerLinkActive="active" class="nav-link collapsed" routerLink="/grupo">
+            <i class="bi bi-circle"></i>
+            <span>Grupo</span>
           </a>
         </li>
       </ul>

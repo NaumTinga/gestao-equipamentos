@@ -16,6 +16,14 @@ import { TipoEquipamentoComponent } from './tipo-equipamento/tipo-equipamento.co
 import { EquipamentoComponent } from './equipamento/equipamento.component';
 import { AquisicaoComponent } from './aquisicao/aquisicao.component';
 import { EmpresaComponent } from './empresa/empresa.component';
+import { UnidadeComponent } from './unidade/unidade.component';
+import { GrupoComponent } from './grupo/grupo.component';
+import { UsuarioComponent } from './usuario/usuario.component';
+import { PerfilComponent } from './usuario/perfil/perfil.component';
+import { ReparacaoComponent } from './empresa/reparacao/reparacao.component';
+import {MarcaService} from "./marca/data/marca.service";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -29,15 +37,22 @@ import { EmpresaComponent } from './empresa/empresa.component';
     TipoEquipamentoComponent,
     EquipamentoComponent,
     AquisicaoComponent,
-    EmpresaComponent
+    EmpresaComponent,
+    UnidadeComponent,
+    GrupoComponent,
+    UsuarioComponent,
+    PerfilComponent,
+    ReparacaoComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
     AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
 
   ],
-  providers: [],
+  providers: [MarcaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
