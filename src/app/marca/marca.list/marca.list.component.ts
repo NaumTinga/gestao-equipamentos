@@ -10,9 +10,11 @@ import {ActivatedRoute, Router} from "@angular/router";
 })
 export class MarcaComponent {
 
+   id: any
    nome: any
-  dataRegisto: any
+   dataRegisto: any
    marcas: any[] = []
+ // marca = Marca
 
 
   constructor(private marcaService: MarcaService,
@@ -27,25 +29,26 @@ export class MarcaComponent {
 
    }
 
-  save(){
 
-    this.marcaService.save(this.nome).subscribe((response: any) => {
+  delete(){
 
-      if (response.status){
-        alert(response.message)
-       this.router.navigate(['/marca']);
+     this.marcaService.delete(this.id).subscribe((response: any) => {
 
-      } else {
-        alert(response.message)
+       if (response.status){
+         alert(response.message)
+         this.router.navigate(['/marca']);
+
+       } else {
+         alert(response.message)
          //this.router.navigate(['/marca']);
          location.reload();
-      }
+       }
 
 
-    }, error => {
-      console.log(error)
-      alert('Erro ao chamar a API')
-    })
+     }, error => {
+       console.log(error)
+       alert('Erro ao chamar a API')
+     })
   }
 
 }

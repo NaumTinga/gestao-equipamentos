@@ -1,0 +1,44 @@
+
+<!-- Special title treatmen -->
+<div class="card text-center col-lg-8">
+  <div class="card-header">
+    <ul class="nav nav-pills card-header-pills">
+      <li class="nav-item">
+        <a class="nav-link active" routerLink="/persist" ><i class="bi bi-plus-lg"></i></a>
+      </li>
+    </ul>
+  </div>
+</div><!-- End Special title treatmen -->
+
+<!-- Tabela -->
+<div class="col-lg-8">
+  <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Lista de Marcas</h5>
+
+    <!-- Default Table -->
+    <table class="table" >
+      <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Data de Registo</th>
+        <th scope="col">Accao</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let marca of marcas">
+        <th scope="row">{{marca.id}}</th>
+        <td>{{marca.nome}}</td>
+        <td>{{marca.dataRegisto | date: 'dd-MM-y'}}</td>
+        <td><a href="#"><i class="fa fa-edit"></i></a> | <a  (click)="delete()"><i class="fa fa-remove"></i></a></td>
+      </tr>
+
+      </tbody>
+    </table>
+    <!-- End Default Table Example -->
+  </div>
+</div>
+</div>
+
+<!--plus-lg-->
