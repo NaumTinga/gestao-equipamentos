@@ -34,4 +34,8 @@ export class MarcaService {
     return this.http.post<any>(this.configUrl+'/update', {nome, id});
   }
 
+  delete(id: any) {
+    return this.http.post<any>(this.configUrl+'/delete', {id});
+  }
+
 }

@@ -8,7 +8,7 @@ import { HeaderComponent } from './layouts/header/header.component';
 import { FooterComponent } from './layouts/footer/footer.component';
 import { HomeComponent } from './layouts/home/home.component';
 import { SidebarComponent } from './layouts/sidebar/sidebar.component';
-import { MarcaComponent } from './marca/marca.component';
+import { MarcaListComponent } from './marca/marca.list/marca.list.component';
 
 import {ROUTES} from "./app.routes";
 import { ModeloComponent } from './modelo/modelo.component';
@@ -24,6 +24,7 @@ import { ReparacaoComponent } from './empresa/reparacao/reparacao.component';
 import {MarcaService} from "./marca/data/marca.service";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
+import { MarcaPersistComponent } from './marca/marca.persist/marca.persist.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,7 @@ import {FormsModule} from "@angular/forms";
     FooterComponent,
     HomeComponent,
     SidebarComponent,
-    MarcaComponent,
+    MarcaListComponent,
     ModeloComponent,
     TipoEquipamentoComponent,
     EquipamentoComponent,
@@ -42,7 +43,8 @@ import {FormsModule} from "@angular/forms";
     GrupoComponent,
     UsuarioComponent,
     PerfilComponent,
-    ReparacaoComponent
+    ReparacaoComponent,
+    MarcaPersistComponent
   ],
   imports: [
     BrowserModule,

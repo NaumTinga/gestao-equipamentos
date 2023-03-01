@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
-import {MarcaService} from "./data/marca.service";
-import {Marca} from "./data/marca.model";
+import {MarcaService} from "../data/marca.service";
+import {Marca} from "../data/marca.model";
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-marca',
-  templateUrl: './marca.component.html',
-  styleUrls: ['./marca.component.scss']
+  templateUrl: './marca.list.component.html',
+  styleUrls: ['./marca.list.component.scss']
 })
-export class MarcaComponent {
+export class MarcaListComponent {
 
    id: any
    nome: any

@@ -1,5 +1,5 @@
 import {Routes} from "@angular/router";
-import {MarcaComponent} from "./marca/marca.component";
+import {MarcaListComponent} from "./marca/marca.list/marca.list.component";
 import {HomeComponent} from "./layouts/home/home.component";
 import {ModeloComponent} from "./modelo/modelo.component";
 import {TipoEquipamentoComponent} from "./tipo-equipamento/tipo-equipamento.component";
@@ -11,10 +11,16 @@ import {UsuarioComponent} from "./usuario/usuario.component";
 import {PerfilComponent} from "./usuario/perfil/perfil.component";
 import {EmpresaComponent} from "./empresa/empresa.component";
 import {ReparacaoComponent} from "./empresa/reparacao/reparacao.component";
+import {MarcaPersistComponent} from "./marca/marca.persist/marca.persist.component";
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'marca', component: MarcaComponent},
+  //Marca routes
+  {path: 'list', component: MarcaListComponent},
+  {path: 'persist', component: MarcaPersistComponent},
+  {path: 'show', component: MarcaPersistComponent},
+
+  //Modelo routes
   {path: 'modelo', component: ModeloComponent},
   {path: 'tipoEquipamento', component: TipoEquipamentoComponent},
   {path: 'equipamento', component: EquipamentoComponent},

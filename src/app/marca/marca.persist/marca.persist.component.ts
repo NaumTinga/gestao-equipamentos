@@ -4,10 +4,10 @@ import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({
   selector: 'app-persist',
-  templateUrl: './persist.component.html',
-  styleUrls: ['./persist.component.scss']
+  templateUrl: './marca.persist.component.html',
+  styleUrls: ['./marca.persist.component.scss']
 })
-export class PersistComponent {
+export class MarcaPersistComponent {
 
   id: any
   nome: any
@@ -26,12 +26,12 @@ export class PersistComponent {
 
       if (response.status){
         alert(response.message)
-        this.router.navigate(['/marca']);
+        this.router.navigate(['/list']);
 
       } else {
         alert(response.message)
-        //this.router.navigate(['/marca']);
-        location.reload();
+        this.router.navigate(['/list']);
+        //location.reload();
       }
 
 
