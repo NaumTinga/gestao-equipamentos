@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {MarcaService} from "../data/marca.service";
-import {Marca} from "../data/marca.model";
 import {ActivatedRoute, Router} from "@angular/router";
 
 @Component({

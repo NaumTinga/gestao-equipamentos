@@ -1,0 +1,40 @@
+<div class="col-lg-12">
+  <div class="card">
+    <div class="card-body">
+      <!--    <h5 class="card-title">Lista de Modelos</h5>-->
+
+      <br>
+      <h5><a class="breadcrumb-item" routerLink="/modeloPersist">Adicionar<i class="bi bi-plus"></i></a></h5>
+
+      <br>
+      <br>
+<!-- Tabela -->
+<div class="col-lg-8">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Lista dos Modelos</h5>
+
+      <!-- Default Table -->
+      <table class="table">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Marca</th>
+          <th scope="col">Data de Registo</th>
+          <th scope="col">Accao</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let modelo of modelos">
+          <th scope="row">{{modelo.id}}</th>
+          <td>{{modelo.nome}}</td>
+          <td>{{modelo.dataRegisto | date: 'dd-MM-y'}}</td>
+          <td><a routerLink="/show"><i class="fa fa-eye"></i></a> | <a  (click)="delete()"><i class="fa fa-remove"></i></a></td>
+        </tr>
+        </tbody>
+      </table>
+      <!-- End Default Table Example -->
+    </div>
+  </div>
+</div>

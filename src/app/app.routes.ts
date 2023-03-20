@@ -12,6 +12,8 @@ import {PerfilComponent} from "./usuario/perfil/perfil.component";
 import {EmpresaComponent} from "./empresa/empresa.component";
 import {ReparacaoComponent} from "./empresa/reparacao/reparacao.component";
 import {MarcaPersistComponent} from "./marca/marca.persist/marca.persist.component";
+import {ModeloListComponent} from "./modelo/modelo.list/modelo.list.component";
+import {ModeloPersistComponent} from "./modelo/modelo.persist/modelo.persist.component";
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -22,6 +24,8 @@ export const ROUTES: Routes = [
 
   //Modelo routes
   {path: 'modelo', component: ModeloComponent},
+  {path: 'modeloList', component: ModeloListComponent},
+  {path: 'modeloPersist', component: ModeloPersistComponent},
   {path: 'tipoEquipamento', component: TipoEquipamentoComponent},
   {path: 'equipamento', component: EquipamentoComponent},
   {path: 'aquisicao', component: AquisicaoComponent},

@@ -25,6 +25,13 @@ import {MarcaService} from "./marca/data/marca.service";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule} from "@angular/forms";
 import { MarcaPersistComponent } from './marca/marca.persist/marca.persist.component';
+import { ModeloPersistComponent } from './modelo/modelo.persist/modelo.persist.component';
+import { ModeloListComponent } from './modelo/modelo.list/modelo.list.component';
+import { ModeloShowComponent } from './modelo/modelo.show/modelo.show.component';
+import {ModeloService} from "./modelo/data/modelo.service";
+import { UnidadeListComponent } from './unidade/unidade.list/unidade.list.component';
+import { UnidadePersistComponent } from './unidade/unidade.persist/unidade.persist.component';
+import { UnidadeShowComponent } from './unidade/unidade.show/unidade.show.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +51,13 @@ import { MarcaPersistComponent } from './marca/marca.persist/marca.persist.compo
     UsuarioComponent,
     PerfilComponent,
     ReparacaoComponent,
-    MarcaPersistComponent
+    MarcaPersistComponent,
+    ModeloPersistComponent,
+    ModeloListComponent,
+    ModeloShowComponent,
+    UnidadeListComponent,
+    UnidadePersistComponent,
+    UnidadeShowComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +67,7 @@ import { MarcaPersistComponent } from './marca/marca.persist/marca.persist.compo
     FormsModule,
 
   ],
-  providers: [MarcaService],
+  providers: [MarcaService, ModeloService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
