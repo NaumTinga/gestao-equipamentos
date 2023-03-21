@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute, Router} from "@angular/router";
 import {ModeloService} from "../data/modelo.service";
 
@@ -7,7 +7,7 @@ import {ModeloService} from "../data/modelo.service";
   templateUrl: './modelo.list.component.html',
   styleUrls: ['./modelo.list.component.scss']
 })
-export class ModeloListComponent {
+export class ModeloListComponent implements OnInit{
 
   id: any
   nome: any

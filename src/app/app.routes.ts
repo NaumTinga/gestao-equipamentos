@@ -26,10 +26,17 @@ export const ROUTES: Routes = [
   {path: 'modelo', component: ModeloComponent},
   {path: 'modeloList', component: ModeloListComponent},
   {path: 'modeloPersist', component: ModeloPersistComponent},
+
   {path: 'tipoEquipamento', component: TipoEquipamentoComponent},
   {path: 'equipamento', component: EquipamentoComponent},
   {path: 'aquisicao', component: AquisicaoComponent},
+
+  //Unidade
   {path: 'unidade', component: UnidadeComponent},
+  {path: 'unidadeList', component: UnidadeComponent},
+  {path: 'unidadePersist', component: UnidadeComponent},
+  {path: 'unidadeShow', component: UnidadeComponent},
+
   {path: 'grupo', component: GrupoComponent},
   {path: 'usuario', component: UsuarioComponent},
   {path: 'perfil', component: PerfilComponent},
