@@ -22,7 +22,7 @@ export class UnidadePersistComponent {
     this.unidadeService.save(this.nome).subscribe((response: any) => {
       if (response.status){
         alert(response.message)
-        this.router.navigate(['/unidade']);
+        this.router.navigate(['/unidadeList']);
 
       } else {
         alert(response.message)

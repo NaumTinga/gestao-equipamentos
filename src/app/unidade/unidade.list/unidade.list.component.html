@@ -26,31 +26,12 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Brandon Jacob</td>
-          <td><a href="#"><i class="fa fa-edit"></i></a> | <a href="#"><i class="fa fa-remove"></i></a></td>
+        <tr *ngFor="let unidade of unidades ">
+          <th scope="row">{{unidade.id}}</th>
+          <td>{{unidade.nome}}</td>
+          <td><a ><i class="fa fa-edit"></i></a> | <a href="#"><i class="fa fa-remove"></i></a></td>
         </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Bridie Kessler</td>
-          <td><a href="#"><i class="fa fa-edit"></i></a> | <a href="#"><i class="fa fa-remove"></i></a></td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Ashleigh Langosh</td>
-          <td><a href="#"><i class="fa fa-edit"></i></a> | <a href="#"><i class="fa fa-remove"></i></a></td>
-        </tr>
-        <tr>
-          <th scope="row">4</th>
-          <td>Angus Grady</td>
-          <td><a href="#"><i class="fa fa-edit"></i></a> | <a href="#"><i class="fa fa-remove"></i></a></td>
-        </tr>
-        <tr>
-          <th scope="row">5</th>
-          <td>Raheem Lehner</td>
-          <td><a href="#"><i class="fa fa-edit"></i></a> | <a href="#"><i class="fa fa-remove"></i></a></td>
-        </tr>
+
         </tbody>
       </table>
       <!-- End Default Table Example -->

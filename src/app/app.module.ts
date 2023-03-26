@@ -32,6 +32,11 @@ import {ModeloService} from "./modelo/data/modelo.service";
 import { UnidadeListComponent } from './unidade/unidade.list/unidade.list.component';
 import { UnidadePersistComponent } from './unidade/unidade.persist/unidade.persist.component';
 import { UnidadeShowComponent } from './unidade/unidade.show/unidade.show.component';
+import {UnidadeService} from "./unidade/data/unidade.service";
+import { GrupoPersistComponent } from './grupo/grupo.persist/grupo.persist.component';
+import { GrupoShowComponent } from './grupo/grupo.show/grupo.show.component';
+import { GrupoListComponent } from './grupo/grupo.list/grupo.list.component';
+import {GrupoService} from "./grupo/data/grupo.service";
 
 @NgModule({
   declarations: [
@@ -57,7 +62,10 @@ import { UnidadeShowComponent } from './unidade/unidade.show/unidade.show.compon
     ModeloShowComponent,
     UnidadeListComponent,
     UnidadePersistComponent,
-    UnidadeShowComponent
+    UnidadeShowComponent,
+    GrupoPersistComponent,
+    GrupoShowComponent,
+    GrupoListComponent
   ],
   imports: [
     BrowserModule,
@@ -67,7 +75,7 @@ import { UnidadeShowComponent } from './unidade/unidade.show/unidade.show.compon
     FormsModule,
 
   ],
-  providers: [MarcaService, ModeloService],
+  providers: [MarcaService, ModeloService, UnidadeService, GrupoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

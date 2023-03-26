@@ -14,6 +14,12 @@ import {ReparacaoComponent} from "./empresa/reparacao/reparacao.component";
 import {MarcaPersistComponent} from "./marca/marca.persist/marca.persist.component";
 import {ModeloListComponent} from "./modelo/modelo.list/modelo.list.component";
 import {ModeloPersistComponent} from "./modelo/modelo.persist/modelo.persist.component";
+import {UnidadeListComponent} from "./unidade/unidade.list/unidade.list.component";
+import {UnidadePersistComponent} from "./unidade/unidade.persist/unidade.persist.component";
+import {UnidadeShowComponent} from "./unidade/unidade.show/unidade.show.component";
+import {GrupoListComponent} from "./grupo/grupo.list/grupo.list.component";
+import {GrupoShowComponent} from "./grupo/grupo.show/grupo.show.component";
+import {GrupoPersistComponent} from "./grupo/grupo.persist/grupo.persist.component";
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -33,11 +39,17 @@ export const ROUTES: Routes = [
 
   //Unidade
   {path: 'unidade', component: UnidadeComponent},
-  {path: 'unidadeList', component: UnidadeComponent},
-  {path: 'unidadePersist', component: UnidadeComponent},
-  {path: 'unidadeShow', component: UnidadeComponent},
+  {path: 'unidadeList', component: UnidadeListComponent},
+  {path: 'unidadePersist', component: UnidadePersistComponent},
+  {path: 'unidadeShow', component: UnidadeShowComponent},
 
+  //Grupo
   {path: 'grupo', component: GrupoComponent},
+  {path: 'grupoList', component: GrupoListComponent},
+  {path: 'grupoPersist', component: GrupoPersistComponent},
+  {path: 'grupoShow', component: GrupoShowComponent},
+
+
   {path: 'usuario', component: UsuarioComponent},
   {path: 'perfil', component: PerfilComponent},
   {path: 'empresa', component: EmpresaComponent},

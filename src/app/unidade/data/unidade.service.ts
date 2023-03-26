@@ -2,8 +2,9 @@ import {HttpClient} from "@angular/common/http";
 import {configUrl} from "../../app.api";
 import {Observable} from "rxjs";
 import {Unidade} from "./unidade.model";
+import {Injectable} from "@angular/core";
 
-
+@Injectable()
 export class UnidadeService{
 
   constructor(private http: HttpClient) {}

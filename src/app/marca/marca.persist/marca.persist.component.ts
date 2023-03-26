@@ -12,8 +12,8 @@ export class MarcaPersistComponent {
   id: any
   nome: any
   dataRegisto: any
-  marcas: any[] = []
-  // marca = Marca
+
+
 
   constructor(private marcaService: MarcaService,
               private route: ActivatedRoute,
