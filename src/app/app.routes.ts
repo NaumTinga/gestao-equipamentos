@@ -20,21 +20,38 @@ import {UnidadeShowComponent} from "./unidade/unidade.show/unidade.show.componen
 import {GrupoListComponent} from "./grupo/grupo.list/grupo.list.component";
 import {GrupoShowComponent} from "./grupo/grupo.show/grupo.show.component";
 import {GrupoPersistComponent} from "./grupo/grupo.persist/grupo.persist.component";
+import {EquipamentoListComponent} from "./equipamento/equipamento.list/equipamento.list.component";
+import {EquipamentoPersistComponent} from "./equipamento/equipamento.persist/equipamento.persist.component";
+import {EquipamentoShowComponent} from "./equipamento/equipamento.show/equipamento.show.component";
 
 export const ROUTES: Routes = [
   {path: '', component: HomeComponent},
   //Marca routes
-  {path: 'list', component: MarcaListComponent},
-  {path: 'persist', component: MarcaPersistComponent},
-  {path: 'show', component: MarcaPersistComponent},
+  {path: 'marca', component: MarcaListComponent,
+  children: [
+    {path: '', redirectTo: 'marca', pathMatch: 'full'},
+    {path: 'persist', component: MarcaPersistComponent},
+    {path: 'show', component: MarcaPersistComponent},
+  ]},
 
   //Modelo routes
-  {path: 'modelo', component: ModeloComponent},
-  {path: 'modeloList', component: ModeloListComponent},
-  {path: 'modeloPersist', component: ModeloPersistComponent},
+  {path: 'modelo', component: ModeloListComponent,
+  children: [
+    {path: '', redirectTo: 'modelo', pathMatch: 'full'},
+    {path: 'list', component: ModeloListComponent},
+    {path: 'modeloPersist', component: ModeloPersistComponent},
+  ]},
+
 
   {path: 'tipoEquipamento', component: TipoEquipamentoComponent},
+
+  //Equipamento
   {path: 'equipamento', component: EquipamentoComponent},
+  {path: 'equipamentoList', component: EquipamentoListComponent},
+  {path: 'equipamentoPersist', component: EquipamentoPersistComponent},
+  {path: 'equipamentoShow', component: EquipamentoShowComponent},
+
+  //Aquisicao
   {path: 'aquisicao', component: AquisicaoComponent},
 
   //Unidade

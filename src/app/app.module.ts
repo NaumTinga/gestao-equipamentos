@@ -37,6 +37,9 @@ import { GrupoPersistComponent } from './grupo/grupo.persist/grupo.persist.compo
 import { GrupoShowComponent } from './grupo/grupo.show/grupo.show.component';
 import { GrupoListComponent } from './grupo/grupo.list/grupo.list.component';
 import {GrupoService} from "./grupo/data/grupo.service";
+import { EquipamentoListComponent } from './equipamento/equipamento.list/equipamento.list.component';
+import { EquipamentoPersistComponent } from './equipamento/equipamento.persist/equipamento.persist.component';
+import { EquipamentoShowComponent } from './equipamento/equipamento.show/equipamento.show.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +68,10 @@ import {GrupoService} from "./grupo/data/grupo.service";
     UnidadeShowComponent,
     GrupoPersistComponent,
     GrupoShowComponent,
-    GrupoListComponent
+    GrupoListComponent,
+    EquipamentoListComponent,
+    EquipamentoPersistComponent,
+    EquipamentoShowComponent
   ],
   imports: [
     BrowserModule,

@@ -22,6 +22,11 @@ export class ModeloListComponent implements OnInit{
       this.modeloService.list().subscribe(data => this.modelos = data)
    }
 
+
+
+   // persistBtn() {
+   //  this.router.navigate(['persist'], {relativeTo:this.route})
+   // }
   delete(){
 
     this.modeloService.delete(this.id).subscribe((response: any) => {
