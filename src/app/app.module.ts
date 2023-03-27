@@ -40,6 +40,9 @@ import {GrupoService} from "./grupo/data/grupo.service";
 import { EquipamentoListComponent } from './equipamento/equipamento.list/equipamento.list.component';
 import { EquipamentoPersistComponent } from './equipamento/equipamento.persist/equipamento.persist.component';
 import { EquipamentoShowComponent } from './equipamento/equipamento.show/equipamento.show.component';
+import { AquisicaoListComponent } from './aquisicao/aquisicao.list/aquisicao.list.component';
+import { AquisicaoPersistComponent } from './aquisicao/aquisicao.persist/aquisicao.persist.component';
+import { AquisicaoShowComponent } from './aquisicao/aquisicao.show/aquisicao.show.component';
 
 @NgModule({
   declarations: [
@@ -71,7 +74,10 @@ import { EquipamentoShowComponent } from './equipamento/equipamento.show/equipam
     GrupoListComponent,
     EquipamentoListComponent,
     EquipamentoPersistComponent,
-    EquipamentoShowComponent
+    EquipamentoShowComponent,
+    AquisicaoListComponent,
+    AquisicaoPersistComponent,
+    AquisicaoShowComponent
   ],
   imports: [
     BrowserModule,

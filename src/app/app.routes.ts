@@ -30,7 +30,8 @@ export const ROUTES: Routes = [
   {path: 'marca', component: MarcaListComponent,
   children: [
     {path: '', redirectTo: 'marca', pathMatch: 'full'},
-    {path: 'persist', component: MarcaPersistComponent},
+    {path: 'list', component: MarcaListComponent},
+    {path: 'marcaPersist', component: MarcaPersistComponent},
     {path: 'show', component: MarcaPersistComponent},
   ]},
 
